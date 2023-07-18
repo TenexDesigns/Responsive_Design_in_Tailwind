@@ -70,6 +70,49 @@
 }
 
 
+
+0. the .container{} in the above , can be applied   on which elements in html, the .container{} selector , it it  a custom selector or is it a built in selector like div{} in css, and where and how do i use the container above, explain with code samples
+------------------------------------------------------------------------------------------------------------------
+
+The .container selector is not a built-in selector in CSS. It is a custom class selector that can be applied to any HTML element to create a container-like styling. In the provided code, it is used as a class selector.
+
+Heres an example of how you can use the .container class in your HTML code:
+
+<div class="container">
+  <!-- Your content goes here -->
+</div>
+In this example, the .container class is applied to a <div> element. However, you can apply the .container class to any HTML element that you want to style as a container. It could be a <section>, <article>, or any other suitable element depending on your page structure and semantics.
+
+To implement the container class in your CSS, you can add the following code to your stylesheet:
+
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+In this CSS code, the properties set the width of the container to 100%, which means it will take up the full width of its parent element. The margin-left: auto and margin-right: auto properties center the container horizontally. The padding-left: 0.5rem and padding-right: 0.5rem properties add some padding to the left and right sides of the container.
+
+By applying the .container class to an HTML element and adding the corresponding CSS styles, you can create a container-like structure with the specified width, centering, and padding properties.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1.How are containers used in thsi context to make responsive layoutes
 ------------------------------------------------------------------------------------------------------------------
 
