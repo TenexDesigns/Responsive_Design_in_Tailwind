@@ -3,7 +3,8 @@ How to set root rem to 10px in Tailwind CSS
 
 
 
-1.Do it via a plugin
+1.Do it via a plugin ---------------> In tailwind
+-----------------------------------------------------------------------------------------------
 
 By adding this to your config file:
 
@@ -48,13 +49,34 @@ Remember, the main advantage of using rem units is that they are scalable and ad
 
 
 
+2.In css --------------------------> Make 1rem=10px in css
+-----------------------------------------------------------------------------------------------
+
+To adjust the root rem to 10px in CSS, you need to set the font-size of the html element to 62.5%. This is because the default font-size in most browsers is 16px, so 62.5% of 16px is 10px. Here's how you can do it:
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+Once youve set the root rem to 10px, it will affect all rem values in your CSS, not just font-size. This is because rem units are relative to the root html element. So if you set the root font-size to 10px, 1rem will be equivalent to 10px for all properties, including width, height, padding, margin, etc.
+
+For example, if you want to set the width of an element to 200px, you can now use 20rem:
+
+div {
+  width: 20rem; /* 200px */
+}
+And if you want to set the font-size of an element to 15px, you can use 1.5rem:
+
+p {
+  font-size: 1.5rem; /* 15px */
+}
+Remember, the main advantage of using rem units is that they are scalable and adjust according to the root font-size. This makes your design more responsive and accessible.
 
 
 
 
-
-2.One extra step if you use the VSCode extension
-
+3.One extra step if you use the VSCode extension
+---------------------------------------------------------------------------------------------
+  
 If you use the official extension for VSCode you may notice that the class preview shows the pixel values still using 16px as a base. To change this you need to add this to your VSCode config:
 
 // other vscode settings
