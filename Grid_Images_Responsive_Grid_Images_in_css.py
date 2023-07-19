@@ -3,10 +3,9 @@
 I want a grid in css that is responsive that displays responsive images, on small  devices , it show images on one column grid, this images can Be expandind as sie increases form sm going forward, I want the images to have  be on two colums on reaching tablet widht and to be on thre columns on reaching desktop size, which csss grid propettiess am I going to use , is it auto fit, and then changing the min width on difreeht device width grid-template-colums:repeat(auto-fit, minmax(300px, 1fr))
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Yes, youre on the right track! To create a responsive grid layout with varying column numbers based on different device widths, you can use CSS Grid with the auto-fit and minmax() functions. Here's an example of how you can achieve this:
+Yes, youre on the right track! To create a responsive grid layout with varying column numbers based on different device widths, 
+  you can use CSS Grid with the auto-fit and minmax() functions. Heres an example of how you can achieve this:
 
-css
-Copy code
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
